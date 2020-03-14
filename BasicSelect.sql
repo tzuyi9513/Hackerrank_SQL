@@ -143,3 +143,57 @@ Query the list of CITY names from STATION that do not start with vowels. Your re
 SELECT DISTINCT city
 FROM station
 WHERE LEFT(city,1) NOT IN ('a','e','i','o','u');
+
+
+
+/*
+Weather Observation Station 10
+Query the list of CITY names from STATION that do not end with vowels. Your result cannot contain duplicates.
+*/
+
+SELECT DISTINCT city
+FROM station
+WHERE RIGHT(city,1) NOT IN ('a','e','i','o','u');
+
+
+
+/*
+Weather Observation Station 11
+Query the list of CITY names from STATION that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.
+*/
+
+SELECT DISTINCT city
+FROM station
+WHERE left(city,1) NOT IN ('a','e','i','o','u') 
+OR right(city, 1) NOT IN ('a','e','i','o','u');
+
+
+
+/*
+Weather Observation Station 12
+Query the list of CITY names from STATION that do not start with vowels and do not end with vowels. 
+Your result cannot contain duplicates.
+*/
+
+SELECT DISTINCT city
+FROM station
+WHERE left(city,1) NOT IN ('a','e','i','o','u') 
+AND right(city, 1) NOT IN ('a','e','i','o','u');
+
+
+
+/*
+Higher Than 75 Marks
+Query the Name of any student in STUDENTS who scored higher than  Marks. 
+Order your output by the last three characters of each name. 
+If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.
+*/
+
+SELECT Name
+FROM STUDENTS
+WHERE Marks > 75
+ORDER BY RIGHT(Name, 3), ID;
+
+
+
+
