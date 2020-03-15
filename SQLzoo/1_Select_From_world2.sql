@@ -1,14 +1,14 @@
 /*
                              world
 +-------------+-----------+---------+------------+--------------+
-|name	        | continent	| area    |	population |gdp           |
+|name         | continent	| area    |	population |gdp           |
 +-------------+-----------+---------+------------+--------------+
-|Afghanistan 	|Asia	      | 652230	| 25500100	 | 20343000000  | 
-|Albania	    |Europe	    | 28748	  | 2831741	   | 12960000000  |  
-|Algeria	    |Africa	    | 2381741	| 37100000	 | 188681000000 | 
-|Algeria	    |Africa	    | 2381741	| 37100000	 | 188681000000 | 
-|Andorra     	|Europe	    | 468	    | 78115	     | 3712000000   | 
-|Angola	      |Africa	    | 1246700	| 20609294	 | 100990000000 | 
+|Afghanistan  |Asia	      | 652230	| 25500100	 | 20343000000  | 
+|Albania      |Europe	    | 28748	  | 2831741	   | 12960000000  |  
+|Algeria      |Africa	    | 2381741	| 37100000	 | 188681000000 | 
+|Algeria      |Africa	    | 2381741	| 37100000	 | 188681000000 | 
+|Andorra      |Europe	    | 468	    | 78115	     | 3712000000   | 
+|Angola       |Africa	    | 1246700	| 20609294	 | 100990000000 | 
 +-------------+-----------+---------+------------+--------------+
 
 */
@@ -98,7 +98,7 @@ WHERE name LIKE ('%United%');
 10.
 Two ways to be big: A country is big if it has an area of more than 3 million sq km or it has a population of more than 250 million.
 Show the countries that are big by area or big by population. Show name, population and area.
-/*
+*/
 
 SELECT name, population, area
 FROM world
