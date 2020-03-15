@@ -1,6 +1,7 @@
 /*
 Given two tables, City and Country whose description are given below. Print the name of all continents (key: Country.Continent) along with the average City population rounded down to nearest integer.
-City
+
+         City
 +-------------+----------+
 | Field       | Type     |
 +-------------+----------+
@@ -10,7 +11,8 @@ City
 | District    | char(20) |
 | Population  | Number   |
 +-------------+----------+
-Country
+
+             Country
 +----------------+-------------+
 | Field          | Type        |
 +----------------+-------------+
